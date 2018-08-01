@@ -1,10 +1,29 @@
-/* CSS declarations go here */
-Header a.active {
-  font-weight: bold;
-  text-decoration: underline;
+.backnav{
+	background-color: #001b33;
 }
-Header a, #login-buttons a {
-  text-decoration: none;
-  margin-right: 10px;
-  color:inherit;
+.backnav2{
+	background-color: #012240;
+}
+.rowp{
+	padding: 300px 0px;
+}
+.logp{
+	padding: 70px 0px;
+}
+.servp{
+	padding-bottom: 100px;
+	background-color: #001129;
+}
+.aboutp{
+	padding-bottom: 100px;
+	background-color: #001129;
+}
+.padu{
+	padding-top: 100px;
+}
+.padi{
+	padding-top: 50px;
+}
+.pad{
+	padding-top: 50px;
 }
