@@ -1,6 +1,5 @@
 import React from 'react';
 import classNames from 'classnames';
-
 function Home() {
   return (
     <div>
@@ -57,7 +56,7 @@ function Home() {
             </div>
            <input type="time" className="form-control" style ={{background:'#0a347a',color:'#0177fe',border:'#001129'}}/>
           </div>
-          <button className="btn" href="/availablebus" style ={{background:'#1160ba',color:'#0f1d3b',border:'#001129'}}>Check bus</button>
+          <a className="btn" type="submit" href="/availablebus" style ={{background:'#1160ba',color:'#0f1d3b',border:'#001129'}}>Check bus</a>
        </form>
        </div>
        

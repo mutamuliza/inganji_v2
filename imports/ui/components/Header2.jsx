@@ -35,30 +35,30 @@ export default class Header2 extends React.Component {
           <div className="modal-dialog" role="document">
             <div className="modal-content">
               <div className="modal-header">
-                <h5 className="modal-title" id="exampleModalLabel">Create account</h5>
+                <h5 className="modal-title" id="exampleModalLabel">Sign in</h5>
                 <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div className="modal-body">
               <form action="/action_page.php">
-  <div class="form-group">
+  <div className="form-group">
     <label for="email">Email address:</label>
-    <input type="email" class="form-control" id="email"/>
+    <input type="email" className="form-control" id="email"/>
   </div>
-  <div class="form-group">
+  <div className="form-group">
     <label for="pwd">Phone Number:</label>
-    <input type="phone number" class="form-control" id="number"/>
+    <input type="phone number" className="form-control" id="number"/>
   </div>
-  <div class="form-group">
+  <div className="form-group">
     <label for="pwd">Username:</label>
-    <input type="text" class="form-control" id="text"/>
+    <input type="text" className="form-control" id="text"/>
   </div>
-  <div class="form-group">
+  <div className="form-group">
     <label for="pwd">Password:</label>
-    <input type="password" class="form-control" id="pwd"/>
+    <input type="password" className="form-control" id="pwd"/>
   </div>
-  <button type="submit" class="btn btn-default">Sign in</button>
+  <button type="submit" className="btn btn-default">Sign in</button>
 </form>
               </div>
               <div className="modal-footer">
