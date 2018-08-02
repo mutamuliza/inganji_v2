@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 import classNames from 'classnames';
-function Home() {
+
+
+class Home extends Component {
+  search_bus(e){
+  e.preventDefault();
+
+  window.open("/availablebuses?from=Kigali&to=Huye&date=31/8/2018&time=13:30",'_self');
+  }
+  render(){
   return (
     <div>
       <div className="container-fluid">
@@ -15,48 +23,63 @@ function Home() {
        <form className="form-inline justify-content-center padx">
           <div className="input-group mr-1">
             <div className="input-group-prepend">
-              <label className="input-group-text" for="inputGroupSelect01"  style ={{background:'#06275e',color:'#0177fe',border:'#001129'}}><i className="fa fa-location-arrow"></i> From:</label>
+              <label className="input-group-text" htmlFor="inputGroupSelect01"  style ={{background:'#06275e',color:'#0177fe',border:'#001129'}}><i className="fa fa-location-arrow"></i> From:</label>
             </div>
             <select className="custom-select" id="inputGroupSelect01"  style ={{background:'#0a347a',color:'#0177fe',border:'#001129'}}>
-              <option selected>Choose...</option>
-              <option value="1">RULINDO</option>
-              <option value="2">BUGESERA</option>
-              <option value="3">NYABIHU</option>
-              <option value="1">RUBAVU</option>
-              <option value="1">MUSANZE</option>
-              <option value="1">KAYONZA</option>
-              <option value="1">GATSIBO</option>
-              <option value="1">NYAGATARE</option>
+              <option defaultValue>Choose...</option>
+              <option value="KIGALI">KIGALI</option>
+              <option value="MUHANGA">MUHANGA</option>
+              <option value="HUYE">HUYE</option>
+              <option value="KAMONYI">KAMONYI</option>
+              <option value="GISAGARA">GISAGARA</option>
+              <option value="NYAMAGABE">NYAMAGABE</option>
+              <option value="NYARUGURU">NYARUGURU</option>
+              <option value="RULINDO">RULINDO</option>
+              <option value="BUGESERA">BUGESERA</option>
+              <option value="NYABIHU">NYABIHU</option>
+              <option value="RUBAVU">RUBAVU</option>
+              <option value="MUSANZE">MUSANZE</option>
+              <option value="KAYONZA">KAYONZA</option>
+              <option value="GATSIBO">GATSIBO</option>
+              <option value="NYAGATARE">NYAGATARE</option>
             </select>
           </div>
             <div className="input-group mr-1">
             <div className="input-group-prepend">
-              <label className="input-group-text" for="inputGroupSelect01" style ={{background:'#06275e',color:'#0177fe',border:'#001129'}}><i className="fa fa-map-marker"></i> To:</label>
+              <label className="input-group-text" htmlFor="inputGroupSelect01" style ={{background:'#06275e',color:'#0177fe',border:'#001129'}}><i className="fa fa-map-marker"></i> To:</label>
             </div>
             <select className="custom-select" id="inputGroupSelect01" style ={{background:'#0a347a',color:'#0177fe',border:'#001129'}}>
-              <option selected>Choose...</option>
-              <option value="1">KIGALI</option>
-              <option value="2">MUHANGA</option>
-              <option value="4">HUYE</option>
-              <option value="5">KAMONYI</option>
-              <option value="6">GISAGARA</option>
-              <option value="7">NYAMAGABE</option>
-              <option value="8">NYARUGURU</option>
+              <option defaultValue>Choose...</option>
+              <option value="KIGALI">KIGALI</option>
+              <option value="MUHANGA">MUHANGA</option>
+              <option value="HUYE">HUYE</option>
+              <option value="KAMONYI">KAMONYI</option>
+              <option value="GISAGARA">GISAGARA</option>
+              <option value="NYAMAGABE">NYAMAGABE</option>
+              <option value="NYARUGURU">NYARUGURU</option>
+              <option value="RULINDO">RULINDO</option>
+              <option value="BUGESERA">BUGESERA</option>
+              <option value="NYABIHU">NYABIHU</option>
+              <option value="RUBAVU">RUBAVU</option>
+              <option value="MUSANZE">MUSANZE</option>
+              <option value="KAYONZA">KAYONZA</option>
+              <option value="GATSIBO">GATSIBO</option>
+              <option value="NYAGATARE">NYAGATARE</option>
             </select>
           </div>
           <div className="input-group mr-1">
             <div className="input-group-prepend">
-              <label className="input-group-text" for="inputGroupSelect01" style ={{background:'#06275e',color:'#0177fe',border:'#001129'}}><i className="fa fa-calendar"></i> Date</label>
+              <label className="input-group-text" htmlFor="inputGroupSelect01" style ={{background:'#06275e',color:'#0177fe',border:'#001129'}}><i className="fa fa-calendar"></i> Date</label>
             </div>
            <input type="date" className="form-control" style ={{background:'#0a347a',color:'#0177fe',border:'#001129'}}/>
           </div>
           <div className="input-group mr-1">
             <div className="input-group-prepend">
-              <label className="input-group-text" for="inputGroupSelect01" style ={{background:'#06275e',color:'#0177fe',border:'#001129'}}><i className="fa fa-clock-o"></i> Hour</label>
+              <label className="input-group-text" htmlFor="inputGroupSelect01" style ={{background:'#06275e',color:'#0177fe',border:'#001129'}}><i className="fa fa-clock-o"></i> Hour</label>
             </div>
            <input type="time" className="form-control" style ={{background:'#0a347a',color:'#0177fe',border:'#001129'}}/>
           </div>
-          <a className="btn" type="submit" href="/availablebus" style ={{background:'#1160ba',color:'#0f1d3b',border:'#001129'}}>Check bus</a>
+          <button onClick={this.search_bus.bind(this)} className="btn" href="#" style ={{background:'#1160ba',color:'#0f1d3b',border:'#001129'}}>Check bus</button>
        </form>
        </div>
        
@@ -133,6 +156,7 @@ function Home() {
      </div>
     </div>
   );
+}
 }
 
 export default Home;

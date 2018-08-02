@@ -3,13 +3,13 @@ import React from 'react';
 function About() {
   return (
     <div className='bookandbuy'>
-      <h1>BOOK AND BUY</h1>
+      <h1>tugende</h1>
 
 <div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div className="modal-dialog" role="document">
             <div className="modal-content">
               <div className="modal-header">
-                <h5 className="modal-title" id="exampleModalLabel">Sign in</h5>
+                <h5 className="modal-title" id="exampleModalLabel">BOOK AND BUY</h5>
                 <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -17,22 +17,27 @@ function About() {
               <div className="modal-body">
               <form action="/action_page.php">
   <div className="form-group">
-    <label for="email">Email address:</label>
-    <input type="email" className="form-control" id="email"/>
-  </div>
-  <div className="form-group">
-    <label for="pwd">Phone Number:</label>
-    <input type="phone number" className="form-control" id="number"/>
-  </div>
-  <div className="form-group">
-    <label for="pwd">Username:</label>
+    <label for="email">FROM:</label>
     <input type="text" className="form-control" id="text"/>
   </div>
   <div className="form-group">
-    <label for="pwd">Password:</label>
-    <input type="password" className="form-control" id="pwd"/>
+    <label for="pwd">TO:</label>
+    <input type="text" className="form-control" id="text"/>
   </div>
-  <button type="submit" className="btn btn-default">Sign in</button>
+  <div className="form-group">
+    <label for="pwd">BUS OPERATOR:</label>
+    <input type="text" className="form-control" id="text"/>
+  </div>
+  <div className="form-group">
+    <label for="pwd">HOUR:</label>
+    <input type="time" className="form-control" id="time"/>
+  </div>
+  <div className="form-group">
+    <label for="pwd">NUMBER OF SEATS:</label>
+    <input type="NUMBERS" className="form-control" id="number"/>
+  </div>
+  <button type="submit" className="btn btn-default">BOOK</button>
+  <button type="submit" className="btn btn-default">BUY</button>
 </form>
               </div>
               <div className="modal-footer">

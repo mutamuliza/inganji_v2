@@ -21,7 +21,7 @@ function pay() {
     <input type="number" className="form-control" id="number"/>
   </div>
   <div className="form-group">
-    <label for="pwd">Account number:</label>
+    <label for="account">Account number:</label>
     <input type="text" className="form-control" id="text"/>
   </div>
   <div className="form-group">

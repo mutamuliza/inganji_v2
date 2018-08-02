@@ -1,6 +1,27 @@
 import React from 'react';
+import { withTracker } from 'meteor/react-meteor-data';
+import {BusOperators} from '../../api/tasks.js';
+import qs from 'query-string';
 
-function availablebus() {
+class availablebus extends React.Component {
+  renderBus(){
+            console.log(this.props.Bus.length);
+            var from_ = qs.parse(this.props.location.search).from;
+            var to_ = qs.parse(this.props.location.search).to;
+            var date = qs.parse(this.props.location.search).date;
+            var time = qs.parse(this.props.location.search).time;
+            return this.props.Bus.map((mucyo)=>(
+              (mucyo.to === to_ && mucyo.from === from_ && mucyo.date === date && mucyo.time===time) ?
+                    <tr>
+            <td> {mucyo.to}</td>
+              <td> {mucyo.company}</td>
+               <td> {mucyo.price}</td>
+            </tr>: <nbsp/>
+            
+                    ));
+        }
+
+  render(){
   return (
     <div className='availablebus' style={{color:"#3b97ff"}}>
       <h1></h1>
@@ -17,30 +38,8 @@ function availablebus() {
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>MUHANGA</td>
-        <td>VOLCANO</td>
-        <td>1030</td>
-       
-      </tr>
-      <tr>
-        <td>MUHANGA</td>
-        <td>HORIZON</td>
-        <td>1030</td>
-        
-      </tr>
-      <tr>
-        <td>MUHANGA</td>
-        <td>KIVU BELT</td>
-        <td>1030</td>
-        
-      </tr>
-      <tr>
-      <td>MUHANGA</td>
-        <td>stella</td>
-        <td>1030</td>
-        
-        </tr>
+      
+        {this.renderBus()}
     </tbody>
   </table>
 </div>
@@ -55,5 +54,10 @@ function availablebus() {
     </div>
   );
 }
+}
 
-export default availablebus;
+export default withTracker(() => {
+        return {
+     Bus: BusOperators.find({}).fetch(),
+    };
+})(availablebus);

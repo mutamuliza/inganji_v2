@@ -14,16 +14,16 @@ export default class Header extends React.Component {
           <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item active">
-                <a className="nav-link" href="#" style={{color:'#3b97ff',}}><i className="fa fa-home"></i>Home <span className="sr-only">(current)</span></a>
+                <NavLink style={{color:'#3b97ff',}} className="nav-link" exact to="/"><i className="fa fa-home"></i>Home <span className="sr-only">(current)</span></NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#services" style={{color:'#3b97ff',}}>Services</a>
+                <NavLink className="nav-link" to="/#services" style={{color:'#3b97ff',}}>Services</NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#contact" style={{color:'#3b97ff',}}>Contact</a>
+                <NavLink className="nav-link" to="/#contact" style={{color:'#3b97ff',}}>Contact</NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#about" style={{color:'#3b97ff',}}>About</a>
+                <NavLink className="nav-link" to="/#about" style={{color:'#3b97ff',}}>About</NavLink>
               </li>
             </ul>
             <form className="form-inline my-2 my-lg-0">
