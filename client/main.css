@@ -6,6 +6,8 @@
 }
 .rowp{
 	padding: 300px 0px;
+	padding-top: 20px;
+	padding-left: 50px;
 }
 .logp{
 	padding: 70px 0px;
@@ -26,4 +28,7 @@
 }
 .pad{
 	padding-top: 50px;
+}
+.padx{
+	padding-top: 80px;
 }

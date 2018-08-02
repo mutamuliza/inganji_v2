@@ -6,7 +6,7 @@ export default class Header extends React.Component {
     return (
       <div>
        <nav className="navbar navbar-expand-lg navbar-light backnav">
-          <a className="navbar-brand" href="#">Navbar</a>
+          <a className="navbar-brand" href="#"><img src="LOGO.png"alt="Responsive image" style={{width:"69px",height:"37px"}}/></a>
           <button className="navbar-toggler" type="button" style={{color:'#3b97ff',}} data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -17,13 +17,13 @@ export default class Header extends React.Component {
                 <a className="nav-link" href="#" style={{color:'#3b97ff',}}><i className="fa fa-home"></i>Home <span className="sr-only">(current)</span></a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#" style={{color:'#3b97ff',}}>Services</a>
+                <a className="nav-link" href="#services" style={{color:'#3b97ff',}}>Services</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#" style={{color:'#3b97ff',}}>Contact</a>
+                <a className="nav-link" href="#contact" style={{color:'#3b97ff',}}>Contact</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#" style={{color:'#3b97ff',}}>About</a>
+                <a className="nav-link" href="#about" style={{color:'#3b97ff',}}>About</a>
               </li>
             </ul>
             <form className="form-inline my-2 my-lg-0">

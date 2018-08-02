@@ -6,6 +6,7 @@ import Header2 from '../components/Header2.jsx';
 import Home from '../pages/Home.jsx';
 import About from '../pages/About.jsx';
 import NotFound from '../pages/NotFound.jsx';
+import availablebus from '../pages/availablebus.jsx';
 
 export default class MainLayout extends React.Component {
   render() {
@@ -17,6 +18,7 @@ export default class MainLayout extends React.Component {
             <Switch>
               <Route exact path='/' component={Home} />
               <Route path = '/about' component={About} />
+              <Route path = '/availablebus' component={availablebus} />
               <Route component={NotFound} />
             </Switch>
         </div>
