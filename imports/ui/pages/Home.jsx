@@ -16,7 +16,7 @@ function Home() {
        <form className="form-inline justify-content-center padx">
           <div className="input-group mr-1">
             <div className="input-group-prepend">
-              <label className="input-group-text" for="inputGroupSelect01"  style ={{background:'#06275e',color:'#0177fe',border:'#001129'}}><i className="fa fa-location-arrow"></i> From:</label>
+              <label className="input-group-text" htmlFor="inputGroupSelect01"  style ={{background:'#06275e',color:'#0177fe',border:'#001129'}}><i className="fa fa-location-arrow"></i> From:</label>
             </div>
             <select className="custom-select" id="inputGroupSelect01"  style ={{background:'#0a347a',color:'#0177fe',border:'#001129'}}>
               <option selected>Choose...</option>
@@ -32,7 +32,7 @@ function Home() {
           </div>
             <div className="input-group mr-1">
             <div className="input-group-prepend">
-              <label className="input-group-text" for="inputGroupSelect01" style ={{background:'#06275e',color:'#0177fe',border:'#001129'}}><i className="fa fa-map-marker"></i> To:</label>
+              <label className="input-group-text" htmlFor="inputGroupSelect01" style ={{background:'#06275e',color:'#0177fe',border:'#001129'}}><i className="fa fa-map-marker"></i> To:</label>
             </div>
             <select className="custom-select" id="inputGroupSelect01" style ={{background:'#0a347a',color:'#0177fe',border:'#001129'}}>
               <option selected>Choose...</option>
@@ -47,13 +47,13 @@ function Home() {
           </div>
           <div className="input-group mr-1">
             <div className="input-group-prepend">
-              <label className="input-group-text" for="inputGroupSelect01" style ={{background:'#06275e',color:'#0177fe',border:'#001129'}}><i className="fa fa-calendar"></i> Date</label>
+              <label className="input-group-text" htmlFor="inputGroupSelect01" style ={{background:'#06275e',color:'#0177fe',border:'#001129'}}><i className="fa fa-calendar"></i> Date</label>
             </div>
            <input type="date" className="form-control" style ={{background:'#0a347a',color:'#0177fe',border:'#001129'}}/>
           </div>
           <div className="input-group mr-1">
             <div className="input-group-prepend">
-              <label className="input-group-text" for="inputGroupSelect01" style ={{background:'#06275e',color:'#0177fe',border:'#001129'}}><i className="fa fa-clock-o"></i> Hour</label>
+              <label className="input-group-text" htmlFor="inputGroupSelect01" style ={{background:'#06275e',color:'#0177fe',border:'#001129'}}><i className="fa fa-clock-o"></i> Hour</label>
             </div>
            <input type="time" className="form-control" style ={{background:'#0a347a',color:'#0177fe',border:'#001129'}}/>
           </div>

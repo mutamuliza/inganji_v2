@@ -31,7 +31,7 @@ export default class Header2 extends React.Component {
             </ul>
           </div>
         </nav>
-        <div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div className="modal-dialog" role="document">
             <div className="modal-content">
               <div className="modal-header">
@@ -42,23 +42,23 @@ export default class Header2 extends React.Component {
               </div>
               <div className="modal-body">
               <form action="/action_page.php">
-  <div class="form-group">
-    <label for="email">Email address:</label>
-    <input type="email" class="form-control" id="email"/>
+  <div className="form-group">
+    <label htmlFor="email">Email address:</label>
+    <input type="email" className="form-control" id="email"/>
   </div>
-  <div class="form-group">
-    <label for="pwd">Phone Number:</label>
-    <input type="phone number" class="form-control" id="number"/>
+  <div className="form-group">
+    <label htmlFor="pwd">Phone Number:</label>
+    <input type="phone number" className="form-control" id="number"/>
   </div>
-  <div class="form-group">
-    <label for="pwd">Username:</label>
-    <input type="text" class="form-control" id="text"/>
+  <div className="form-group">
+    <label htmlFor="pwd">Username:</label>
+    <input type="text" className="form-control" id="text"/>
   </div>
-  <div class="form-group">
-    <label for="pwd">Password:</label>
-    <input type="password" class="form-control" id="pwd"/>
+  <div className="form-group">
+    <label htmlFor="pwd">Password:</label>
+    <input type="password" className="form-control" id="pwd"/>
   </div>
-  <button type="submit" class="btn btn-default">Sign in</button>
+  <button type="submit" className="btn btn-default">Sign in</button>
 </form>
               </div>
               <div className="modal-footer">
