@@ -1,6 +1,21 @@
 import React from 'react';
+import { withTracker } from 'meteor/react-meteor-data';
+import {BusOperators} from '../../api/tasks.js';
 
-function availablebus() {
+class availablebus extends React.Component {
+  renderBus(){
+            console.log(this.props.Bus.length);
+            return this.props.Bus.map((mucyo)=>(
+                    <tr>
+            <td> {mucyo.to}</td>
+              <td> {mucyo.company}</td>
+               <td> {mucyo.price}</td>
+            </tr>
+            
+                    ));
+        }
+
+  render(){
   return (
     <div className='availablebus' style={{color:"#3b97ff"}}>
       <h1></h1>
@@ -41,6 +56,7 @@ function availablebus() {
         <td>1030</td>
         
         </tr>
+        {this.renderBus()}
     </tbody>
   </table>
 </div>
@@ -55,5 +71,10 @@ function availablebus() {
     </div>
   );
 }
+}
 
-export default availablebus;
+export default withTracker(() => {
+        return {
+     Bus: BusOperators.find({}).fetch(),
+    };
+})(availablebus);
