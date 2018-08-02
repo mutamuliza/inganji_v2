@@ -18,7 +18,7 @@ export default class MainLayout extends React.Component {
             <Switch>
               <Route exact path='/' component={Home} />
               <Route path = '/about' component={About} />
-              <Route path = '/availablebus' component={availablebus} />
+              <Route path = '/availablebuses' component={availablebus} />
               <Route component={NotFound} />
             </Switch>
         </div>
