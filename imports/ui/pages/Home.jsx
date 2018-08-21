@@ -1,94 +1,59 @@
-import React, { Component } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 
-
-class Home extends Component {
-  search_bus(e){
-  e.preventDefault();
-
-  window.open("/availablebuses?from=Kigali&to=Huye&date=31/8/2018&time=13:30",'_self');
-  }
-  render(){
+function Home() {
   return (
     <div>
-      <div className="container-fluid">
-      <div className="row justify-content-center rowp" style ={{background:'#001129',}}>
-      <div className="col-md-7 justify-content-center padx">
-      <h1 style={{color: "#3b97ff"}}> A short tutorial of how to use our app</h1>
-       <video width="700" height="400" controls>
-        <source src="final.mp4" type="video/mp4"/>
-      </video>
-      </div>
-      <div className="col-md-12">
-       <form className="form-inline justify-content-center padx">
+    <div className="container-fluid">
+      <div className="row justify-content-center rowp" id="home" style ={{background:'#001129',}}>
+       <form className="form-inline">
           <div className="input-group mr-1">
             <div className="input-group-prepend">
-              <label className="input-group-text" htmlFor="inputGroupSelect01"  style ={{background:'#06275e',color:'#0177fe',border:'#001129'}}><i className="fa fa-location-arrow"></i> From:</label>
+              <label className="input-group-text" for="inputGroupSelect01"  style ={{background:'#06275e',color:'#0177fe',border:'#001129'}}><i className="fa fa-location-arrow"></i> From:</label>
             </div>
-            <select className="custom-select" id="From"  style ={{background:'#0a347a',color:'#0177fe',border:'#001129'}}>
-              <option defaultValue>Choose...</option>
-              <option value="KIGALI">KIGALI</option>
-              <option value="MUHANGA">MUHANGA</option>
-              <option value="HUYE">HUYE</option>
-              <option value="KAMONYI">KAMONYI</option>
-              <option value="GISAGARA">GISAGARA</option>
-              <option value="NYAMAGABE">NYAMAGABE</option>
-              <option value="NYARUGURU">NYARUGURU</option>
-              <option value="RULINDO">RULINDO</option>
-              <option value="BUGESERA">BUGESERA</option>
-              <option value="NYABIHU">NYABIHU</option>
-              <option value="RUBAVU">RUBAVU</option>
-              <option value="MUSANZE">MUSANZE</option>
-              <option value="KAYONZA">KAYONZA</option>
-              <option value="GATSIBO">GATSIBO</option>
-              <option value="NYAGATARE">NYAGATARE</option>
+            <select className="custom-select" id="inputGroupSelect01"  style ={{background:'#0a347a',color:'#0177fe',border:'#001129'}}>
+              <option selected>Choose...</option>
+              <option value="1">HUYE</option>
+              <option value="2">NYAGATARE</option>
+              <option value="3">RUHANGO</option>
+              <option value="3">MUHANGA</option>
+              <option value="3">NYAMAGABE</option>
+              <option value="3">RUBAVU</option>
+              <option value="3">KIGALI</option>
             </select>
           </div>
             <div className="input-group mr-1">
             <div className="input-group-prepend">
-              <label className="input-group-text" htmlFor="inputGroupSelect01" style ={{background:'#06275e',color:'#0177fe',border:'#001129'}}><i className="fa fa-map-marker"></i> To:</label>
+              <label className="input-group-text" for="inputGroupSelect01" style ={{background:'#06275e',color:'#0177fe',border:'#001129'}}><i className="fa fa-map-marker"></i> To:</label>
             </div>
-            <select className="custom-select" id="To" style ={{background:'#0a347a',color:'#0177fe',border:'#001129'}}>
-              <option defaultValue>Choose...</option>
-              <option value="KIGALI">KIGALI</option>
-              <option value="MUHANGA">MUHANGA</option>
-              <option value="HUYE">HUYE</option>
-              <option value="KAMONYI">KAMONYI</option>
-              <option value="GISAGARA">GISAGARA</option>
-              <option value="NYAMAGABE">NYAMAGABE</option>
-              <option value="NYARUGURU">NYARUGURU</option>
-              <option value="RULINDO">RULINDO</option>
-              <option value="BUGESERA">BUGESERA</option>
-              <option value="NYABIHU">NYABIHU</option>
-              <option value="RUBAVU">RUBAVU</option>
-              <option value="MUSANZE">MUSANZE</option>
-              <option value="KAYONZA">KAYONZA</option>
-              <option value="GATSIBO">GATSIBO</option>
-              <option value="NYAGATARE">NYAGATARE</option>
+            <select className="custom-select" id="inputGroupSelect01" style ={{background:'#0a347a',color:'#0177fe',border:'#001129'}}>
+              <option selected>Choose...</option>
+              <option value="1">KIGALI</option>
+              <option value="2">GAKENKE</option>
+              <option value="3">MUSANZE</option>
+              <option value="3">RUBAVU</option>
+              <option value="3">KIGALI</option>
+              <option value="3">MUHANGA</option>
+              <option value="3">HUYE</option>
+              <option value="3">NYAMAGABE</option>
+
             </select>
           </div>
           <div className="input-group mr-1">
             <div className="input-group-prepend">
-              <label className="input-group-text" htmlFor="inputGroupSelect01" style ={{background:'#06275e',color:'#0177fe',border:'#001129'}}><i className="fa fa-calendar"></i> Date</label>
+              <label className="input-group-text" for="inputGroupSelect01" style ={{background:'#06275e',color:'#0177fe',border:'#001129'}}><i className="fa fa-calendar"></i> Date</label>
             </div>
            <input type="date" className="form-control" style ={{background:'#0a347a',color:'#0177fe',border:'#001129'}}/>
           </div>
           <div className="input-group mr-1">
             <div className="input-group-prepend">
-              <label className="input-group-text" htmlFor="inputGroupSelect01" style ={{background:'#06275e',color:'#0177fe',border:'#001129'}}><i className="fa fa-clock-o"></i> Hour</label>
+              <label className="input-group-text" for="inputGroupSelect01" style ={{background:'#06275e',color:'#0177fe',border:'#001129'}}><i className="fa fa-clock-o"></i> Hour</label>
             </div>
            <input type="time" className="form-control" style ={{background:'#0a347a',color:'#0177fe',border:'#001129'}}/>
           </div>
-          <button onClick={this.search_bus.bind(this)} className="btn" href="#" style ={{background:'#1160ba',color:'#0f1d3b',border:'#001129'}}>Check bus</button>
+          <a className="btn"  href="/availablebus" style ={{background:'#1160ba',color:'#0f1d3b',border:'#001129'}}>Check bus</a>
        </form>
        </div>
-       
-       </div>
-      
-
-
-
-     
      </div>
      <div className="container-fluid servp">
       <div className="row">
@@ -142,21 +107,21 @@ class Home extends Component {
           <div className="col-md-7" style ={{color:'#2f7fd8'}}>
              <textarea className="form-control" aria-label="With textarea" style ={{background:'#031d39',color:'#0177fe',border:'1px solid #0090ff',height:'209px'}} placeholder="your message...."></textarea>
           </div>
-          <div className="col-md-7" style ={{color:'#2f7fd8'}}>
-          <div className="col-md-12 pad"></div>
+          <div className="col-md-7 mt-4" style ={{color:'#2f7fd8'}}>
             <form className="form-inline">
-              <input type="email" className="form-control" style ={{background:'#031d39',color:'#0177fe',border:'1px solid #0090ff',width: "587px"}} placeholder="Your email..."/>
-              <button type="button"className="btn btn-primary" style={{marginLeft:"15px",color: "#0b2347"}}>send</button>
-              <i className="fa fa-facebook-official"style={{marginLeft:"15px"}}></i>
-              <i className="fa fa-twitter-square"style={{marginLeft:"15px"}}></i>
-              <i className="fa fa-envelope"style={{marginLeft:"10px"}}></i>
+              <input type="email" className="form-control" style ={{background:'#031d39',color:'#0177fe',border:'1px solid #0090ff',width:'500px'}} placeholder="Your email..."/>
+              <button className="btn ml-3" style ={{background:'#1160ba',color:'#0f1d3b',border:'#001129',padding:'7px 50px'}}>SEND</button>
+              <h5 className="padicon"><i className="fa fa-facebook-official"></i></h5>
+              <h5 className="padicon"><i className="fa fa-envelope"></i></h5>
+              <h5 className="padicon"><i className="fa fa-twitter-square"></i></h5>
+              <h5 className="padicon"><i className="fa fa-instagram"></i></h5>
+
             </form>
           </div>
       </div>
      </div>
     </div>
   );
-}
 }
 
 export default Home;

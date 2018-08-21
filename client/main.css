@@ -1,3 +1,6 @@
+body{
+	background: #001129;
+}
 .backnav{
 	background-color: #001b33;
 }
@@ -6,8 +9,6 @@
 }
 .rowp{
 	padding: 300px 0px;
-	padding-top: 20px;
-	padding-left: 50px;
 }
 .logp{
 	padding: 70px 0px;
@@ -26,28 +27,54 @@
 .padi{
 	padding-top: 50px;
 }
-.pad{
-	padding-top: 50px;
+.padicon{
+	padding: 0 0 0 20px;
 }
-.padx{
-	padding-top: 80px;
+.padigo{
+	padding: 90px 0 100px 0;
 }
-.jenn{
-	margin-bottom: 50px;
-	margin-top: 80px;
-	
-	margin-left: 200px;
-	
+.padibt{
+	margin: 94px 0 20px 0;
 }
-.jul{
-	padding-top: 20px;
-
+.padibtn{
+	margin-bottom: 119px;
 }
-body{
-	color:#0177fe;
-	background-color: #001737;	
+.padibtn1{
+	margin: 50px 0px;
 }
-soso{
-	margin-left: 100px;
+.bor{
+	background-color: #0d3dbe;
+	font-size: 18px;
+	font-weight: 500;
+	color: #3b97ff;
+	padding:10px 0px 10px 10px;
+	outline: none;
+	border: none;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
 }
-
+.bol{
+	background-color: #0d3dbe;
+	font-size: 18px;
+	font-weight: 500;
+	color: #3b97ff;
+	padding: 10px 3px 10px 0px;
+	border-bottom-left-radius: 25px;
+	border-top-left-radius: 25px;
+}
+.padibtn2{
+	background-color: #061533;
+	font-size: 18px;
+	font-weight: 500;
+	color: #0177fe; 
+	border-radius: 25px;
+	margin: 29px 0 0 0;
+}
+.padibtn3{
+	background-color: #0d3dbe;
+	font-size: 18px;
+	font-weight: 500;
+	color: #0177fe;
+	border-radius: 25px;
+	margin: 10px 0 42px 0;
+}

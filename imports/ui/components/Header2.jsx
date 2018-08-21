@@ -1,6 +1,6 @@
 import React from 'react';
-import SignUp from './SignUp.jsx';
-import AccountsUIWrapper from './AccountsUIWrapper.js';
+import { NavLink } from 'react-router-dom';
+
 export default class Header2 extends React.Component {
   render() {
     return (
@@ -17,25 +17,20 @@ export default class Header2 extends React.Component {
                 <a className="nav-link" href="#" style={{color:'#3b97ff',}}>BUY TICKET<span className="sr-only">(current)</span></a>
               </li>
               <li className="nav-item">
-              <a className="nav-link"  style={{color:'#3b97ff',}}>  <AccountsUIWrapper /></a>
+                <a className="nav-link" href="/login" style={{color:'#3b97ff',}}><i className="fa fa-user-circle"></i> Sign in</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#" style={{color:'#3b97ff',}} data-toggle="modal" data-target="#exampleModal"><i className="fa fa-user-circle"></i> Sign in</a>
+                <a className="nav-link" href="#" style={{color:'#3b97ff',}}><img src={'uk.png'} style={{height:'15px'}}/> Eng</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#" style={{color:'#3b97ff',}}><img src="united-kingdom.png"alt="Responsive image"style={{width:"20px",height:"20px",backgroundColor: "#012240"}}/>Eng</a>
+                <a className="nav-link" href="#" style={{color:'#3b97ff',}}><img src={'rw.png'} style={{height:'15px'}}/> Kiny</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#" style={{color:'#3b97ff',}}><img src="rwanda.png"alt="Responsive image"style={{width: "20px",height:"20px",backgroundColor: "#012240"}}/>Kiny</a>
+                <a className="nav-link" href="#" style={{color:'#3b97ff',}}><img src={'france.png'} style={{height:'15px'}}/> Fren</a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#" style={{color:'#3b97ff',}}><img src="france.png"alt="Responsive image"style={{width: "20px",height:"20px",backgroundColor: "#012240"}}/>Fren</a>
-              </li>
-           
             </ul>
           </div>
         </nav>
-       <SignUp />
       </div>
     );
   }
