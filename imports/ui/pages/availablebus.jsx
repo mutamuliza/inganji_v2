@@ -2,6 +2,7 @@ import React from 'react';
 import { withTracker } from 'meteor/react-meteor-data';
 import {BusOperators} from '../../api/tasks.js';
 import qs from 'query-string';
+import SignUp from '../components/SignUp.jsx';
 
 class availablebus extends React.Component {
   renderBus(){
@@ -13,12 +14,13 @@ class availablebus extends React.Component {
             return this.props.Bus.map((mucyo)=>(
               (mucyo.to === to_ && mucyo.from === from_ && mucyo.date === date && mucyo.time===time) ?
                     <tr>
-            <td> {mucyo.to}</td>
-              <td> {mucyo.company}</td>
-               <td> {mucyo.price}</td>
+            <td> { Meteor.user()?<a className="btn btn-primary" href="/bookandbuy" role="button">{mucyo.to}</a>:<a className="btn btn-primary" href="#"  data-toggle="modal" data-target="#exampleModal"> {mucyo.to}</a> }</td>
+              <td><a className="btn btn-primary" href="/bookandbuy" role="button">{mucyo.company}</a></td>
+               <td> <a className="btn btn-primary" href="/bookandbuy" role="button">{mucyo.price}</a></td>
             </tr>: <nbsp/>
-            
+           
                     ));
+          <SignUp />
         }
 
   render(){
@@ -43,12 +45,6 @@ class availablebus extends React.Component {
     </tbody>
   </table>
 </div>
-
-
-
-
-
-
 
 
     </div>

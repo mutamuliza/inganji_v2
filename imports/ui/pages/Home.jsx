@@ -25,7 +25,7 @@ class Home extends Component {
             <div className="input-group-prepend">
               <label className="input-group-text" htmlFor="inputGroupSelect01"  style ={{background:'#06275e',color:'#0177fe',border:'#001129'}}><i className="fa fa-location-arrow"></i> From:</label>
             </div>
-            <select className="custom-select" id="inputGroupSelect01"  style ={{background:'#0a347a',color:'#0177fe',border:'#001129'}}>
+            <select className="custom-select" id="From"  style ={{background:'#0a347a',color:'#0177fe',border:'#001129'}}>
               <option defaultValue>Choose...</option>
               <option value="KIGALI">KIGALI</option>
               <option value="MUHANGA">MUHANGA</option>
@@ -48,7 +48,7 @@ class Home extends Component {
             <div className="input-group-prepend">
               <label className="input-group-text" htmlFor="inputGroupSelect01" style ={{background:'#06275e',color:'#0177fe',border:'#001129'}}><i className="fa fa-map-marker"></i> To:</label>
             </div>
-            <select className="custom-select" id="inputGroupSelect01" style ={{background:'#0a347a',color:'#0177fe',border:'#001129'}}>
+            <select className="custom-select" id="To" style ={{background:'#0a347a',color:'#0177fe',border:'#001129'}}>
               <option defaultValue>Choose...</option>
               <option value="KIGALI">KIGALI</option>
               <option value="MUHANGA">MUHANGA</option>
@@ -149,7 +149,7 @@ class Home extends Component {
               <button type="button"className="btn btn-primary" style={{marginLeft:"15px",color: "#0b2347"}}>send</button>
               <i className="fa fa-facebook-official"style={{marginLeft:"15px"}}></i>
               <i className="fa fa-twitter-square"style={{marginLeft:"15px"}}></i>
-              <i className="fa fa-envelope"style={{marginLeft:"15px"}}></i>
+              <i className="fa fa-envelope"style={{marginLeft:"10px"}}></i>
             </form>
           </div>
       </div>

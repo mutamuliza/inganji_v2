@@ -3,56 +3,36 @@ import React from 'react';
 function pay() {
   return (
     <div className='pay'>
-      <h1>PAY YOUR TICKET</h1>
+      
 
-<div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div className="modal-dialog" role="document">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h5 className="modal-title" id="exampleModalLabel">BOOK AND BUY</h5>
-                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div className="modal-body">
-              <form action="/action_page.php">
-  <div className="form-group">
-    <label for="ticket">Ticket fare:</label>
-    <input type="number" className="form-control" id="number"/>
-  </div>
-  <div className="form-group">
-    <label for="account">Account number:</label>
-    <input type="text" className="form-control" id="text"/>
-  </div>
-  <div className="form-group">
-    <label for="pwd">Pin:</label>
-    <input type="numbers" className="form-control" id="number"/>
-  </div>
-  
-  <button type="submit" className="btn btn-default" text-center>PAY</button>
- 
-</form>
-              </div>
-              <div className="modal-footer">
-                <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" className="btn btn-primary">Save changes</button>
-              </div>
-            </div>
+
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-md-8" ></div>
+          <div className="col-md-3" style={{width: "361px",height:"625px",backgroundColor:" #061532"}}>
+          <img src="tugende.png" className="tugende" alt="tugende" style={{width:"90px", height:"30px",marginTop:"30px" ,marginLeft:"35px"}}/>
+          <div className="table"style={{width:"308px",height:"400px",background:"#ffffff",opacity: "0.65"}}>
+          <label style={{color:"#0b2c5e" ,fontSize:"15px" ,paddingBottom:"10px",marginLeft:"35px",paddingTop:"15px"}}>NAME:</label>
+         
+          <br/>
+          <label style={{color:"#0b2c5e" ,fontSize:"15px",paddingBottom:"10px",marginLeft:"35px"}}>DEPARTURE-DESTINATION</label>
+          <br/>
+          <label style={{color:"#0b2c5e" ,fontSize:"15px",paddingBottom:"10px",marginLeft:"35px"}}>AGENCY:</label>
+          <br/>
+          <label style={{color:"#0b2c5e" ,fontSize:"15px",paddingBottom:"10px",marginLeft:"35px"}}>DATE:</label><br/>
+          <label style={{color:"#0b2c5e" ,fontSize:"15px",paddingBottom:"10px",marginLeft:"35px"}}>At:</label><br/>
+          <label style={{color:"#0b2c5e" ,fontSize:"15px",paddingBottom:"20px",marginLeft:"35px"}}>TICKET no:</label><br/>
+          <label style={{color:"#0b2c5e" ,fontSize:"20px",paddingBottom:"10px",marginLeft:"35px"}}>YOU HAVE PURCHASED A SINGLE RIDE TICKET</label>
+
+          <h5 style={{textAlign:"center"}}>Enjoy the ride with us, Tugende! </h5>
+          
           </div>
+          <a href="" type="button" class="btn btn-primary" style={{textAlign:"center",margintop:"40px",width: "100px",height: "30px",boxshadow:"0 3px 6px rgba(0, 0, 0, 0.16)",borderRadius: "25px",backgroundColor: " #061532",color: "#0177fe", marginleft:"20px",fontFamily: "Exo",fontSize: "14px",fontWeight:"500",marginLeft:"10px"}}>Change Time</a>
+          <a href="" type="button" class="primary" style={{textAlign:"center",margintop:"40px",width: "100px",height: "30px",boxshadow:"0 3px 6px rgba(0, 0, 0, 0.16)",borderRadius: "25px",backgroundColor: " #061532",color: "#0177fe", marginLeft:"35px",fontFamily: "Exo",fontSize: "14px",fontWeight:"500"}}>Cancel</a>
           </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+          <div className="col-md-1"></div>
+        </div>
+      </div>
 
 
     </div>

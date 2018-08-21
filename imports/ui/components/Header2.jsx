@@ -1,6 +1,6 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-
+import SignUp from './SignUp.jsx';
+import AccountsUIWrapper from './AccountsUIWrapper.js';
 export default class Header2 extends React.Component {
   render() {
     return (
@@ -17,6 +17,9 @@ export default class Header2 extends React.Component {
                 <a className="nav-link" href="#" style={{color:'#3b97ff',}}>BUY TICKET<span className="sr-only">(current)</span></a>
               </li>
               <li className="nav-item">
+              <a className="nav-link"  style={{color:'#3b97ff',}}>  <AccountsUIWrapper /></a>
+              </li>
+              <li className="nav-item">
                 <a className="nav-link" href="#" style={{color:'#3b97ff',}} data-toggle="modal" data-target="#exampleModal"><i className="fa fa-user-circle"></i> Sign in</a>
               </li>
               <li className="nav-item">
@@ -28,46 +31,11 @@ export default class Header2 extends React.Component {
               <li className="nav-item">
                 <a className="nav-link" href="#" style={{color:'#3b97ff',}}><img src="france.png"alt="Responsive image"style={{width: "20px",height:"20px",backgroundColor: "#012240"}}/>Fren</a>
               </li>
+           
             </ul>
           </div>
         </nav>
-        <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div className="modal-dialog" role="document">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h5 className="modal-title" id="exampleModalLabel">Sign in</h5>
-                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div className="modal-body">
-              <form action="/action_page.php">
-  <div className="form-group">
-    <label htmlFor="email">Email address:</label>
-    <input type="email" className="form-control" id="email"/>
-  </div>
-  <div className="form-group">
-    <label htmlFor="pwd">Phone Number:</label>
-    <input type="phone number" className="form-control" id="number"/>
-  </div>
-  <div className="form-group">
-    <label htmlFor="pwd">Username:</label>
-    <input type="text" className="form-control" id="text"/>
-  </div>
-  <div className="form-group">
-    <label htmlFor="pwd">Password:</label>
-    <input type="password" className="form-control" id="pwd"/>
-  </div>
-  <button type="submit" className="btn btn-default">Sign in</button>
-</form>
-              </div>
-              <div className="modal-footer">
-                <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" className="btn btn-primary">Save changes</button>
-              </div>
-            </div>
-          </div>
-        </div>
+       <SignUp />
       </div>
     );
   }
